@@ -3,10 +3,8 @@ function init() {
     // getExams()
 }
 
-
-
 function getExams() {
-    const exam_url = 'http://127.0.0.1:8000/api/exams/'
+    const exam_url = 'https://emp-project-2cq8.onrender.com/api/exams/'
     fetch(exam_url)
     .then(res=>res.json())
     .then(data=>{
@@ -26,7 +24,7 @@ function saveExam(){
     const enddate = document.getElementById('enddate').value
     const facid = document.getElementById('facid').value
 
-    const exam_url = 'http://127.0.0.1:8000/api/exams/'
+    const exam_url = 'https://emp-project-2cq8.onrender.com/api/exams/'
     fetch(exam_url,{
         'method':'POST',
         'headers':{'Content-Type':'application/json'},
